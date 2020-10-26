@@ -53,4 +53,5 @@ function processApis (taro) {
 
 export function initIotApi (taro) {
   processApis(taro)
+  taro.env = my.env
 }

@@ -1,5 +1,5 @@
 import { Alipay } from '@tarojs/plugin-platform-alipay';
-export default class QYWX extends Alipay {
+export default class IOT extends Alipay {
     platform: string;
     runtimePath: string;
     reactComponents: string;
