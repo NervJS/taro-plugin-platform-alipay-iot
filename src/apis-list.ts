@@ -25,7 +25,7 @@ export const noPromiseApis = new Set([
   'offCloudMessage'
 ])
 
-export const otherApis = new Set([
+export const needPromiseApis = new Set([
   'startApp',
   'faceVerify',
   'faceLogin',

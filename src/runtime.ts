@@ -1,6 +1,6 @@
 import { mergeReconciler, mergeInternalComponents } from '@tarojs/shared'
 import {
-  components as wxComponents,
+  components as aliComponents,
   initNativeApi,
   hostConfig
 } from '@tarojs/plugin-platform-alipay/dist/runtime-utils'
@@ -13,6 +13,6 @@ hostConfig.initNativeApi = function (taro) {
 }
 
 mergeReconciler(hostConfig)
-mergeInternalComponents(wxComponents)
+mergeInternalComponents(aliComponents)
 mergeInternalComponents(components)
 

@@ -1,10 +1,10 @@
-import { noPromiseApis, otherApis } from './apis-list'
+import { noPromiseApis, needPromiseApis } from './apis-list'
 
 declare const my: any
 
 function processApis (taro) {
   taro.ix = {}
-  const apis = [...noPromiseApis, ...otherApis]
+  const apis = [...noPromiseApis, ...needPromiseApis]
 
   apis.forEach(key => {
     if (!(key in my.ix)) {
@@ -14,7 +14,7 @@ function processApis (taro) {
       return
     }
 
-    if (otherApis.has(key)) {
+    if (needPromiseApis.has(key)) {
       taro.ix[key] = (options, ...args) => {
         options = options || {}
         const obj = Object.assign({}, options)
