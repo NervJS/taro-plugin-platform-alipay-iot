@@ -1,6 +1,6 @@
 {
   "name": "@tarojs/plugin-platform-alipay-iot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "支付宝 IOT 端小程序平台插件",
   "author": "drchan",
   "homepage": "https://github.com/NervJS/taro-plugin-platform-alipay-iot",
